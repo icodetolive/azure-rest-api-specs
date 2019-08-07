@@ -1,6 +1,6 @@
 {
   "parameters": {
-    "api-version": "2019-01-01",
+    "api-version": "2019-07-01-preview",
     "billingAccountId": "100",
     "departmentId": "1234",
     "exportName": "TestExport",
