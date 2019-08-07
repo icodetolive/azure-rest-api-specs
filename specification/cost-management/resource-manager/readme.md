@@ -26,21 +26,30 @@ These are the global settings for the Cost Management API.
 
 ``` yaml
 openapi-type: arm
-tag: package-preview-2019-04
+tag: package-preview-2019-07
 azure-validator: true
 ```
 
 ---
 
 
+### Tag: package-preview-2019-07
+
+These settings apply only when `--tag=package-preview-2019-07` is specified on the command line.
+
+```yaml $(tag) == 'package-preview-2019-07'
+input-file:
+  - Microsoft.CostManagement/preview/2019-07-01-preview/costmanagement.json
+```
 ### Tag: package-preview-2019-04
 
 These settings apply only when `--tag=package-preview-2019-04` is specified on the command line.
 
-```yaml $(tag) == 'package-preview-2019-04'
+``` yaml $(tag) == 'package-preview-2019-04'
 input-file:
   - Microsoft.CostManagement/preview/2019-04-01-preview/costmanagement.json
 ```
+
 ### Tag: package-2019-01
 
 These settings apply only when `--tag=package-2019-01` is specified on the command line.
@@ -287,4 +296,3 @@ java:
 regenerate-manager: true
 generate-interface: true
 ```
-
